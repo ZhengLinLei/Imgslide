@@ -1,0 +1,1 @@
+This path only created for tutorial images

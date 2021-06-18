@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>ImgSlide - Free Share Images</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+    <div class="container py-3">
+        <nav class="navbar justify-content-between align-items-end border-bottom">
+            <a href="/" class="navbar-brand logo-brand">
+                <img src="/static/img/logo/ImgSlide-logos_transparent_line.png" alt="Logo">
+            </a>
+            <ul class="navbar-list d-flex align-items-center">
+                <li class="search">
+                    <form action="/search" method="get">
+                        <div class="input-search d-flex align-items-center py-2 px-4 shadow-sm rounded">
+                            <input type="text" class="form-control-o" placeholder="Search image">
+                            <a href="/user" type="submit">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+                    </form>
+                </li>
+                <li class="d-flex align-items-center ml-5">
+                    <a href="/user">Sign In</a>
+                    <div class="ml-3">
+                        <a href="/user" class="btn btn-primary">Sign Up</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        {{{ body }}}
+        <footer class="mt-5 py-5 bg-light text-center">
+            <div class="text-muted">
+                <a href="" class="mx-2 text-muted">Copyright</a>
+                <a href="" class="mx-2 text-muted">ImgSlide</a>
+                <a href="" class="mx-2 text-muted">Legal</a>
+            </div>
+            <div class="mt-5 text-primary"><a href="https://github.com/zhenglinlei">By ZLL <i class="fab fa-github"></i></a></div>
+        </footer>
+    </div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

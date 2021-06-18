@@ -1,0 +1,56 @@
+<main class="my-5 home">
+    <section class="row">
+        <div class="col-12 col-lg-8 px-2">
+            <header class="mb-5 d-flex justify-content-between align-items-center">
+                <div class="d-flex text-white">
+                    <a class="mr-5 btn btn-secondary"><i class="fas fa-eye"></i> {{image.[0].views}}</a>
+                    <a class="btn btn-danger"><i class="fas fa-heart"></i> {{image.[0].likes}}</a>
+                </div>
+                <div>
+                    <a href="/image/{{prev.[0].filename}}">
+                        <i class="fas fa-angle-left"></i> Prev
+                    </a>
+                    <a href="/image/{{next.[0].filename}}" class="ml-3 btn btn-primary">
+                        Next <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+            </header>
+            <main class="mt-4 text-center">
+                <img src="/static/img/db/{{ image.[0].filename }}" class="rounded w-75" alt="">
+            </main>
+        </div>
+        <div class="col-12 col-md-4 px-3 pt-5 mt-5">
+            <h4>{{image.[0].title}}</h4>
+            <small class="text-muted">@zhenglinlei</small>
+            <p class="mt-5 text-muted">{{image.[0].description}}</p>
+            <footer class="pt-5">
+                <a href="" class="btn btn-primary"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="btn btn-secondary"><i class="fab fa-instagram"></i></a>
+                <a href="" class="btn btn-success"><i class="fab fa-whatsapp"></i></a>
+            </footer>
+        </div>
+    </section>
+    <main class="my-5 border-top py-5">
+        <section class="images-card">
+            {{!-- {{[0].[0]}} --}}
+            {{#each popularImages}}
+                <div class="image-group">
+                    {{#each this}}
+                        <div class="image-row">
+                            <a href="/image/{{filename}}">
+                                <img src="/static/img/db/{{filename}}" alt="" class="rounded">
+                                <div class="text-white image-option p-2 text-center small">
+                                    <p>{{title}}</p>
+                                    <div class="mt-3ç2 d-flex justify-content-around">
+                                        <div><i class="fas fa-eye"></i> {{views}}</div>
+                                        <div><i class="fas fa-heart"></i> {{likes}}</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {{/each}}
+                </div>
+            {{/each}}
+        </section>
+    </main>
+</main>

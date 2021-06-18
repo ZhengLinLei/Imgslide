@@ -1,0 +1,35 @@
+{
+  "name": "imgslide",
+  "version": "1.0.0",
+  "description": "Share Image Social Media",
+  "main": "index.js",
+  "scripts": {
+    "import-db": "node ./importdb.js",
+    "start": "node ./src/index.js",
+    "start-n": "npx nodemon ./src/index.js"
+  },
+  "author": {
+    "name": "ZLL",
+    "url": "https://github.com/zhenglinlei"
+  },
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "dependencies": {
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "fs-extra": "^10.0.0",
+    "md5": "^2.3.0",
+    "mongoose": "^5.12.13",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
