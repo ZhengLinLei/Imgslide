@@ -67,7 +67,7 @@ Node will run this project in port 3000, you can change it in `./src/server/conf
 
 ## <a name="moreimages"></a> More images
 
-![Images](./tutorial/images.png)
+![Images](./tutorial/image.png)
 
 ![User](./tutorial/user.png)
 
